@@ -1,0 +1,38 @@
+<query-builder [formControl]='queryCtrl' [config]='currentConfig' [allowRuleset]='allowRuleset'
+               [allowCollapse]='allowCollapse'
+               [persistValueOnFieldChange]='persistValueOnFieldChange'>
+    <ng-container *queryInput="let rule; type: 'textarea'; let getDisabledState=getDisabledState">
+      <textarea class="text-input text-area" [(ngModel)]="rule.value" [disabled]=getDisabledState()
+                placeholder="Custom Textarea"></textarea>
+    </ng-container>
+</query-builder>
+
+<br/>
+
+<div>
+    <div class="row">
+        <p>Control Valid: {{ queryCtrl.valid }}</p>
+        <div>
+            <label><input type="checkbox" (change)=switchModes($event)>Entity Mode</label>
+        </div>
+    </div>
+    <div class="row">
+        <p>Control Touched: {{ queryCtrl.touched }}</p>
+        <div>
+            <label><input type="checkbox" (change)=changeDisabled($event)>Disabled</label>
+        </div>
+    </div>
+    <div class="row">
+        <div>
+            <label><input type="checkbox" [(ngModel)]='allowRuleset'>Allow Ruleset</label>
+        </div>
+        <div>
+            <label><input type="checkbox" [(ngModel)]='allowCollapse'>Allow Collapse</label>
+        </div>
+        <div>
+            <label><input type="checkbox" [(ngModel)]='persistValueOnFieldChange'>Persist Values on Field Change</label>
+        </div>
+    </div>
+
+    <textarea class="output">{{ query | json }}</textarea>
+</div>

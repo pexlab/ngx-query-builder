@@ -1,0 +1,50 @@
+{
+    "name"            : "@pexlab/ngx-query-builder",
+    "description"     : "Modernized version of angular2-query-builder",
+    "author"          : {
+        "name" : "PexLab",
+        "email": "opensource@pexlab.net",
+        "url"  : "https://www.pexlab.net"
+    },
+    "contributors"    : [
+        {
+            "name" : "David van der Sluijs",
+            "email": "david.van-der-sluijs@pexlab.net",
+            "url"  : "https://www.slatedave.de"
+        },
+        {
+            "name" : "Philipp Glaubitz",
+            "email": "philipp.glaubitz@pexlab.net",
+            "url"  : "https://github.com/PhilippGlaubitz"
+        },
+        {
+            "name" : "Robin Gaši",
+            "email": "robin.gasi@pexlab.net",
+            "url"  : "https://github.com/RobinGasi"
+        }
+    ],
+    "repository"      : {
+        "type": "git",
+        "url" : "https://github.com/pexlab/ngx-query-builder.git"
+    },
+    "bugs"            : {
+        "url": "https://github.com/pexlab/ngx-query-builder/issues"
+    },
+    "funding"         : [
+        {
+            "type": "individual",
+            "url" : "https://www.buymeacoffee.com/slatedave"
+        }
+    ],
+    "version"         : "0.0.1",
+    "license"         : "MIT",
+    "homepage"        : "https://pexlab.net/projects/query-builder",
+    "peerDependencies": {
+        "@angular/common": "^17.2.0",
+        "@angular/core"  : "^17.2.0"
+    },
+    "dependencies"    : {
+        "tslib": "^2.3.0"
+    },
+    "sideEffects"     : false
+}
